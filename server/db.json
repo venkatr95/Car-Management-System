@@ -1,0 +1,48 @@
+ 
+{
+    "carRepo": [
+      {
+        "id": 1,
+        "model": "Clio",
+        "engine": "Petrol-based, 1.6 BHP",
+        "infSystem": "MIB2 Inf System",
+        "design": "Coupe",
+        "currentLocation": "79.509460,23.917851"
+      },
+      {
+        "id": 2,
+        "model": "Venturo",
+        "engine": "Petrol-based, 2.1 BHP",
+        "infSystem": "MIB2+ Inf System",
+        "design": "Hatchback",
+        "currentLocation": "50.602765,10.258553"
+      }
+    ],
+
+    "userData": [
+      {
+        "userId": 101,
+        "name": "Peter",
+        "gender": "M",
+        "age": 27
+      },
+      {
+        "userId": 102,
+        "name": "Susan",
+        "gender": "F",
+        "age": 26
+      },
+      {
+        "userId": 103,
+        "name": "Franziska",
+        "gender": "F",
+        "age": 28
+      },
+      {
+        "userId": 104,
+        "name": "Thomas",
+        "gender": "M",
+        "age": 32
+      }
+      ]
+}
