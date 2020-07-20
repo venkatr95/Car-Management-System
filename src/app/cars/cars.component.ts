@@ -22,6 +22,7 @@ export class CarsComponent implements OnInit {
   getCars() {
     this.carService.getCars().subscribe((cars: Car[]) => {
       this.cars = cars;
+      console.log(this.cars)
     });
   }
   

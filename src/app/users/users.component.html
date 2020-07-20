@@ -1,1 +1,29 @@
-<p>users works!</p>
+<ng-template #noUsers>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Loading users...</h3>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<div class="container" *ngIf="users; else noUsers">
+    <div class="row">
+        <div class="col-md-7">
+            <div *ngFor="let user of users" class="panel panel-info">
+                <div class="panel-heading">
+                    {{user.userId}} - {{user.name}}
+                    <div class="pull-right">
+                        <button class="btn btn-xs btn-warning" (click)="editUser(car.userId)">Edit</button>
+                        <button class="btn btn-xs btn-danger"(click)="deleteUser(user.userId)">Delete</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 well well-sm">
+            <app-cars-add (update)="getUsers()" [selectedUser] = "selectedUser"></app-cars-add>
+        </div>
+    </div>
+</div>

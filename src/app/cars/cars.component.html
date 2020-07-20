@@ -13,7 +13,7 @@
         <div class="col-md-7">
             <div *ngFor="let car of cars" class="panel panel-info">
                 <div class="panel-heading">
-                    {{car.Model}} - {{car.Engine}}
+                    {{car.model}} - {{car.engine}}
                     <div class="pull-right">
                         <button class="btn btn-xs btn-warning" (click)="editCar(car.id)">Edit</button>
                         <button class="btn btn-xs btn-danger"(click)="deleteCar(car.id)">Delete</button>
